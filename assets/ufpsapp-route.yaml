@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: ufpsapp-route
+spec:
+  to:
+    kind: Service
+    name: ufpsapp-service
+  port:
+    targetPort: 8000

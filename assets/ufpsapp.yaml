@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ufpsapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ufpsapp
+  template:
+    metadata:
+      labels:
+        app: ufpsapp
+    spec:
+      containers:
+        - name: ufpsapp
+          image: docker.io/prabaharravichandran/ufpsapp:1.0
+          ports:
+            - containerPort: 8000
