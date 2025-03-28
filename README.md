@@ -1,0 +1,1 @@
+# Deploying inference engine over Red Hat OpenShift platform
