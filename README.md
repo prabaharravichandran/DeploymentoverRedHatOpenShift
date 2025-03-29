@@ -9,6 +9,9 @@ docker login
 docker push prabaharravichandran/ufpsapp:1.0
 ```
 
+Get your temporary login tokens from OpenShift and update .env
+
+[https://console-openshift-console.apps.edcm-science-ocp-ops1.science.gc.ca/](https://console-openshift-console.apps.edcm-science-ocp-ops1.science.gc.ca/)
 
 ```bash
 oc apply -f ufpsapp.yaml
